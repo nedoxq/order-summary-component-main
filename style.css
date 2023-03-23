@@ -1,0 +1,232 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background: url(images/pattern-background-mobile.svg), hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    line-height: 1.45rem;
+}
+
+.order__container {
+    max-width: 20.5rem;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    padding-bottom: 1.65rem;
+}
+
+@media (min-width:600px) {
+    .order__container {
+        max-width: 28rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .order__summary h1 {
+        font-size: 1.65rem;
+        margin-top: 2.65rem;
+        margin-bottom: 1.45rem;
+    }
+
+    .order__summary p.order__summary__text {
+        margin-bottom: 1.15rem;
+        font-size: 16px;
+    }
+
+    .order__summary {
+        margin-inline: 3rem;
+    }
+
+    body {
+        line-height: 1.65rem;
+        background: url(images/pattern-background-desktop.svg), hsl(225, 100%, 94%);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+.order__summary h1 {
+    font-weight: 900;
+    font-size: 1.45rem;
+    color: hsl(223, 47%, 23%);
+    margin-top: 1.5rem;
+    margin-bottom: 1.15rem;
+}
+
+.order__summary {
+    margin-inline: 1.75rem;
+}
+
+.order__summary p.order__summary__text {
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.order__container button {
+    display: block;
+    margin: auto;
+    border: none;
+    background-color: #3829e0;
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    padding: 0.95rem;
+    font-size: 0.95rem;
+    border-radius: 0.65rem;
+    width: 100%;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 16px 22px -1px rgba(56, 41, 224, 0.25);
+    box-shadow: 0px 16px 22px -1px rgba(56, 41, 224, 0.25);
+    margin-bottom: 1.5rem;
+    transition: 0.2s;
+}
+
+.order__container button:hover {
+    background-color: hsla(245, 75%, 52%, 0.702);
+}
+
+.order__plan {
+    padding: 1.25rem;
+    background-color: hsl(225, 100%, 98%);
+    margin-bottom: 1.5rem;
+    border-radius: 0.65rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width:600px) {
+
+    .order__plan {
+        margin-bottom: 2.5rem;
+    }
+
+    .order__container button {
+        margin-bottom: 1.75rem;
+    }
+
+    .plan__pricing__left {
+        gap: 1.35rem;
+    }
+
+    .plan__pricing__left img.icon {
+        margin-left: 0.125rem;
+    }
+}
+
+
+.plan__pricing__left {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.plan__pricing__left img.icon {
+    width: 45px;
+    height: 45px;
+    aspect-ratio: 1/1;
+    margin-left: 0rem;
+}
+
+.plan__pricing__left h5 {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    font-size: 0.9rem;
+}
+
+@media (min-width:600px) {
+    .plan__pricing__left h5 {
+        font-size: 1rem;
+    }
+
+    .plan__pricing__right a {
+        font-size: 0.85rem;
+        margin-right: 0.9rem;
+    }
+
+    .plan__pricing__left p {
+        font-size: 1rem;
+    }
+
+}
+
+.plan__pricing__right a {
+    font-size: 0.80rem;
+    color: hsl(245, 75%, 52%);
+    font-weight: 900;
+    margin-right: 0rem;
+    transition: 0.2s;
+}
+
+
+.plan__pricing__right a:hover {
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 0.702);
+}
+
+.plan__pricing__right {
+    display: flex;
+    align-items: center;
+}
+
+.plan__pricing__left p {
+    color: hsl(224, 23%, 55%);
+    font-size: 0.9rem;
+}
+
+.plan__information {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.order__container a.cancel-btn {
+    text-decoration: none;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    color: hsl(224, 23%, 55%);
+    transition: 0.2s;
+}
+
+.order__container a.cancel-btn:hover {
+    color: hsl(223, 47%, 23%);
+}
