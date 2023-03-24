@@ -43,27 +43,27 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     text-align: center;
-    line-height: 1.45rem;
+    line-height: 1.65rem;
 }
 
 .order__container {
-    max-width: 20.5rem;
+    max-width: 28rem;
     background-color: white;
     border-radius: 1rem;
     overflow: hidden;
-    padding-bottom: 1.65rem;
+    padding-bottom: 2.5rem;
 }
 
-@media (min-width:600px) {
+@media (max-width:600px) {
     .order__container {
-        max-width: 28rem;
-        padding-bottom: 2.5rem;
+        max-width: 20.5rem;
+        padding-bottom: 1.65rem;
     }
 
     .order__summary h1 {
-        font-size: 1.65rem;
-        margin-top: 2.65rem;
-        margin-bottom: 1.45rem;
+        font-size: 1.45rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.15rem;
     }
 
     .order__summary p.order__summary__text {
@@ -71,13 +71,9 @@ body {
         font-size: 16px;
     }
 
-    .order__summary {
-        margin-inline: 3rem;
-    }
-
     body {
-        line-height: 1.65rem;
-        background: url(images/pattern-background-desktop.svg), hsl(225, 100%, 94%);
+        line-height: 1.45rem;
+        background: url(images/pattern-background-mobile.svg), hsl(225, 100%, 94%);
         background-repeat: no-repeat;
         background-size: contain;
     }
@@ -85,21 +81,27 @@ body {
 
 .order__summary h1 {
     font-weight: 900;
-    font-size: 1.45rem;
+    font-size: 1.65rem;
     color: hsl(223, 47%, 23%);
-    margin-top: 1.5rem;
-    margin-bottom: 1.15rem;
+    margin-top: 2.65rem;
+    margin-bottom: 1.45rem;
 }
 
 .order__summary {
-    margin-inline: 1.75rem;
+    margin-inline: 3rem;
+}
+
+@media (max-width:600px) {
+    .order__summary {
+        margin-inline: 1.75rem;
+    }
 }
 
 .order__summary p.order__summary__text {
     color: hsl(224, 23%, 55%);
     margin-bottom: 1.5rem;
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 
 .order__container button {
@@ -170,27 +172,27 @@ body {
 .plan__pricing__left h5 {
     font-weight: 900;
     color: hsl(223, 47%, 23%);
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
-@media (min-width:600px) {
+@media (max-width:600px) {
     .plan__pricing__left h5 {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .plan__pricing__right a {
-        font-size: 0.85rem;
+        font-size: 0.80rem;
         margin-right: 0.9rem;
     }
 
     .plan__pricing__left p {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
 }
 
 .plan__pricing__right a {
-    font-size: 0.80rem;
+    font-size: 0.85rem;
     color: hsl(245, 75%, 52%);
     font-weight: 900;
     margin-right: 0rem;
@@ -210,7 +212,7 @@ body {
 
 .plan__pricing__left p {
     color: hsl(224, 23%, 55%);
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .plan__information {
